@@ -319,14 +319,14 @@ Available environment variables:
 
 ##### PHP configuration
 
-- `PHP_ENABLE_OPCACHE`: Enable OPcache for PHP scripts. No default.
-- `PHP_EXPOSE_PHP`: Enables HTTP header with PHP version. No default.
-- `PHP_MAX_EXECUTION_TIME`: Maximum execution time for PHP scripts. Default: **18000**
-- `PHP_MAX_INPUT_TIME`: Maximum input time for PHP scripts. No default.
-- `PHP_MAX_INPUT_VARS`: Maximum amount of input variables for PHP scripts. No default.
-- `PHP_MEMORY_LIMIT`: Memory limit for PHP scripts. Default: **756M**
-- `PHP_POST_MAX_SIZE`: Maximum size for PHP POST requests. No default.
-- `PHP_UPLOAD_MAX_FILESIZE`: Maximum file size for PHP uploads. No default.
+- `PHP_ENABLE_OPCACHE`: Enable OPcache for PHP scripts. Should be turned off for custom extension development. Default: **On**
+- `PHP_EXPOSE_PHP`: Enables HTTP header with PHP version. Default: **On**
+- `PHP_MAX_EXECUTION_TIME`: Maximum execution time for PHP scripts. Default: **0 (unlimited)**
+- `PHP_MAX_INPUT_TIME`: Maximum input time for PHP scripts. Default: **-1 (unlimited)**.
+- `PHP_MAX_INPUT_VARS`: Maximum amount of input variables for PHP scripts. Default: **1000**
+- `PHP_MEMORY_LIMIT`: Memory limit for PHP scripts. Default: **1G**
+- `PHP_POST_MAX_SIZE`: Maximum size for PHP POST requests. Default: **40M**
+- `PHP_UPLOAD_MAX_FILESIZE`: Maximum file size for PHP uploads. Default: **40M**
 
 ## Logging
 
